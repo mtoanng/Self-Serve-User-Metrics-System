@@ -53,7 +53,7 @@ metric_name: total_orders_last_10_days
 
 description: Total number of orders placed by each customer in the last 10 days
 
-owner: data.analyst@shopback.com
+owner: data.analyst@gmail.com
 
 schedule: "0 8 * * *" # Metadata only - not implemented in prototype
 
