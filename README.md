@@ -60,11 +60,17 @@ schedule: "0 8 * * *" # Metadata only - not implemented in prototype
 sql: |
 
   SELECT
+  
     c.customer_id,
+    
     COUNT(o.order_id) AS total_orders_last_10_days
+    
   FROM orders o
+  
   JOIN customers c ON o.customer_id = c.customer_id
+  
   WHERE o.order_purchase_timestamp >= DATE '2023-09-01'
+  
   GROUP BY 1
   
 # Step 3: Validate it to ensures your YAML and SQL syntax are valid.
