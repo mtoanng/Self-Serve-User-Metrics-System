@@ -76,8 +76,7 @@ python src/validate_yaml.py
 
 
 ## 🧠 Notes for running and testing Metrics
--All .yaml metrics are independent, meaning each metric can be executed separately without depending on others.
--However, the provided scripts are designed to run all metrics by default for convenience.
+-All .yaml metrics are independent, meaning each metric can be executed separately without depending on others. However, the provided scripts are designed to run all metrics by default for convenience.
 
 
 
