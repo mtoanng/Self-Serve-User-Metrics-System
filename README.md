@@ -48,7 +48,6 @@ Example: /metrics/avg_items_per_order.yaml
 | `sql`         | Valid SQL statement returning a dataset                  |
 
 Example:
-
 metric_name: total_orders_last_10_days
 description: Total number of orders placed by each customer in the last 10 days
 owner: data.analyst@shopback.com
