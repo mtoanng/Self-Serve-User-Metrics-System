@@ -58,6 +58,7 @@ owner: data.analyst@shopback.com
 schedule: "0 8 * * *" # Metadata only - not implemented in prototype
 
 sql: |
+
   SELECT
     c.customer_id,
     COUNT(o.order_id) AS total_orders_last_10_days
