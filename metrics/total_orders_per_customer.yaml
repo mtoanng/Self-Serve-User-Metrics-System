@@ -1,0 +1,12 @@
+metric_name: total_orders_per_customer
+description: Total number of orders placed by each customer
+owner: data.analyst@shopback.com
+schedule: "0 8 * * *"
+sql: |
+  SELECT 
+      c.customer_id,
+      COUNT(o.order_id) AS total_orders
+  FROM orders o
+  JOIN customers c ON o.customer_id = c.customer_id
+  GROUP BY 1
+  LIMIT 5
